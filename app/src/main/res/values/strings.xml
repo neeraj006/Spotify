@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spotify Streamer</string>
+    <string name="setting_default_value">popular</string>
+    <string name="shared_preference_key">preference</string>
+    <string name="sort_preference">Sorted By</string>
+    <string name="movie_name">movie_name</string>
+    <string name="release_date">Release Date</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="plot_synopsis_dummy">PlotSynopsis</string>
+</resources>
