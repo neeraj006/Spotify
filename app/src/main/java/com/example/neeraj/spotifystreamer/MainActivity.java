@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     String baseUrl = "http://api.themoviedb.org/3/movie/";
     String preference = "top_rated";
-    String apiKey = "d4a6c95a8a7b0576f22425e1a518e28b";
+    String apiKey = "xxxxxxxxxxxxxx";
     String baseURLImage="http://image.tmdb.org/t/p/w185";
     JSONObject jsonObject;
     List<MyObject> posterPathList = new ArrayList<MyObject>();
