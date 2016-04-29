@@ -1,6 +1,7 @@
 package com.example.neeraj.spotifystreamer.Fragment;
 
 import com.example.neeraj.spotifystreamer.Model.MovieDetailModel;
+import com.example.neeraj.spotifystreamer.Model.TrailerModel;
 
 import java.util.ArrayList;
 
@@ -17,4 +18,11 @@ public interface Api
 
     @GET("3/movie/{preference}")
     Call<ArrayList<MovieDetailModel>> fetchMovieDetails(@Path("preference") String preference,@Query("api_key") String key);
+
+    @GET("3/movie/{id}/videos")
+    Call<ArrayList<TrailerModel>> fetchTrailers(@Path("id") String id,@Query("api_key") String key);
+
+    @GET("3/movie/{id}/reviews")
+    Call<ArrayList<TrailerModel>> fetchReviews(@Path("id") String id,@Query("api_key") String key);
+
 }
