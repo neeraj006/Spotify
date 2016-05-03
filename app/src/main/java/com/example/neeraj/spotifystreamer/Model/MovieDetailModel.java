@@ -13,6 +13,21 @@ public class MovieDetailModel {
     int id;
     String title;
     double vote_average;
+    byte[] image;
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+    public void setVote_average(double vote_average) {
+
+        this.vote_average = vote_average;
+    }
+
+    public byte[] getImage() {
+
+        return image;
+    }
 
     public void setPoster_path(String poster_path) {
         this.poster_path = poster_path;

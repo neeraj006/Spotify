@@ -17,7 +17,7 @@ import org.parceler.Parcels;
 
 public class MainActivity extends AppCompatActivity implements MoviePosterLIstFragment.OnItemSelectedListener {
     boolean mIsDualPane=false;
-
+    boolean firstTimeGridview=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +51,11 @@ public class MainActivity extends AppCompatActivity implements MoviePosterLIstFr
         }
         else
         {
-            Intent intent=new Intent(MainActivity.this, DetailActivity.class);
+            Intent intent = new Intent(MainActivity.this, DetailActivity.class);
             intent.putExtra("object", Parcels.wrap(movieDetailModel));
             startActivity(intent);
         }
+
     }
 }
 
