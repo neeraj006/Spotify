@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements MoviePosterLIstFr
         super.onCreate(savedInstanceState);
         SharedPreferences sharedPreferences=getSharedPreferences("myPreference", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=sharedPreferences.edit();
-        editor.putString("key","d4a6c95a8a7b0576f22425e1a518e28b");
+        editor.putString("key","xxxxxxxxxxxxxxxxxxxxxx");
         editor.putString("baseURL","http://api.themoviedb.org/");
         editor.putString("baseURLImage", "http://image.tmdb.org/t/p/w185");
         editor.commit();
